@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width">
+  <link rel="stylesheet" href="scheme4.css">
+</head>
+
+<body>
+  <div class="container">
+    <span class="text1">Rainfed Area Development Programme</span>
+    <span class="text3">Name of Department : Department of Agriculture</span><br>
+    <span class="text2">A farmer needs a permanent set of electrical connections for an electric water pump. For that,
+      farmers
+      have to submit the latest copy of electricity bill.
+      Micro-irrigation systems should only be constructed by company representatives.
+      Farmers will be given the benefit within the limit of 5 hectares area.</span>
+    *
+    <br>
+    <button id="nextStep">Apply</button>
+  </div>
+  <div id="my_form"></div>
+  <div id="thank_you" style="display: none;">
+  </div>
+  <script>
+    var nextStep = document.querySelector('#nextStep');
+    nextStep.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.getElementById('my_form').style.display = 'none';
+      document.getElementById('thank_you').style.display = 'block';
+      alert("Thank You For Applying")
+    });
+  </script>

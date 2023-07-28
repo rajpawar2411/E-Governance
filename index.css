@@ -1,0 +1,101 @@
+.header_middle{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgda(0,0,0,0.75)),url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.menu{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu ul li{
+    list-style: none;
+    font-size: x-large;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.menu ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.menu ul li a:hover{
+    color: var(--color-primary);
+}
+.menu ul li:hover::after{
+    width: 100%;
+
+
+
+}
+.field-content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: #fff;
+}
+.field-content h1{
+    font-size: 70px;
+    margin-top: 80px;
+    
+}
+.search-form{
+    margin-top: 50px;
+    width: 200%;
+    position: relative;
+    height: 200%;
+}
+.heading{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+.wrapper{
+    size: 30%;
+}
+.logo{
+    size: 30%;
+    padding: 30%;
+}
+.menu ul li:hover .dropdown{
+    display: none;
+}
+
+.menu ul li:hover .dropdown{
+    display: block;
+    position: relative;;
+    left: 0;
+    top:100%;
+
+}
+.menu ul li:hover .dropdown ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .dropdown ul li{
+    width: 150px;
+    padding: 10px;
+
+}

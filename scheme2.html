@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width">
+  <link rel="stylesheet" href="scheme2.css">
+</head>
+
+<body>
+  <div class="container">
+    <span class="text1">National Food Security Mission: Food grains, Oil seeds, Sugarcane and Cotton</span>
+    <span class="text3">Name of Department : Department of Agriculture</span><br>
+    <span class="text2">Farmer should have Aadhaar Card
+      Farmer should have 7/12 certificate and 8–A certificate.
+      For beneficiaries belonging to SC, ST caste category valid caste certificate is mandatory.
+      Benefit of subsidy can only be availed for one equipment per beneficiary from any one
+      scheme.Eligibility
+      based on Districts :
+      i. Rice – Nashik, Pune, Satara, Nagpur, Bhandara, Gondiya, Chandrapur, Gadchiroli
+      ii. Wheat – Solapur, Beed, Nagpur
+      iii. Pulses – All districts
+      If farmer is applying for any component which is coming under the Rice, Wheat, Pulses then above
+      district criteria will be used for the selected component by farmer.</span><br>
+
+    <button id="nextStep">Apply</button>
+  </div>
+  <div id="my_form"></div>
+  <div id="thank_you" style="display: none;">
+  </div>
+  <script>
+    var nextStep = document.querySelector('#nextStep');
+    nextStep.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.getElementById('my_form').style.display = 'none';
+      document.getElementById('thank_you').style.display = 'block';
+      alert("Thank You For Applying")
+    });
+  </script>
